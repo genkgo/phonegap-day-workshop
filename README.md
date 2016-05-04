@@ -6,10 +6,11 @@
 - Creating an app, updating an app, adding plugins
 - Development tools
 - Signing your apps and submitting to stores
+- Anything else you want, if we can fit it in -- just ask
 
 ### What won't this workshop cover?
 
-- Writing a PhoneGap app (well kindof)
+- Details of a 
 
 ### Links:
 

@@ -1,6 +1,6 @@
 ## Ways to Interact with Build
 
-### UI
+### Website
 
 https://build.phonegap.com/apps
 
