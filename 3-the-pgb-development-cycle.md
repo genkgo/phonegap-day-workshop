@@ -1,3 +1,8 @@
+---
+layout: module
+title: Develop and Debug Cycle
+---
+
 ## PhoneGap Build and the Development Cycle
 
 ### Debugging
@@ -21,4 +26,9 @@ Without being directly connected to a device and having a native SDK debugger, h
 
 PhoneGap Build offers a tool called **Hydration** which allows you to quickly upload and deploy changes to your PhoneGap app's web assets (HTML, JS, CSS) without doing a full install. Its important to note that when you update your config.xml, including addition of any plugins, a full app rebuild and reinstall is required for the changes to take effect.
 
-[next](4-generating-keys-and-publishing-your-app.md)
+<div class="row" style="margin-top:40px;">
+<div class="col-sm-12">
+<a href="4-generating-keys-and-publishing-your-app.html" class="btn btn-default pull-right">Next <i class="glyphicon
+glyphicon-chevron-right"></i></a>
+</div>
+</div>
