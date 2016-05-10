@@ -28,7 +28,7 @@ PhoneGap Build offers a tool called **Hydration** which allows you to quickly up
 
 <div class="row" style="margin-top:40px;">
 <div class="col-sm-12">
-<a href="4-generating-keys-and-publishing-your-app.html" class="btn btn-default pull-right">Next <i class="glyphicon
+<a href="5-generating-keys-and-publishing-your-app.html" class="btn btn-default pull-right">Next <i class="glyphicon
 glyphicon-chevron-right"></i></a>
 </div>
 </div>

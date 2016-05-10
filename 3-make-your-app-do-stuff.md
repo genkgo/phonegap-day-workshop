@@ -19,7 +19,7 @@ Ways to pull a plugin into your app on PhoneGap Build:
 
         <plugin spec="https://github.com/phonegap/phonegap-plugin-push.git#1.6.3" source="git" />
 
-3. [PhoneGap Build's hosted repository](https://build.phonegap.com/plugins):
+3. ~[PhoneGap Build's hosted repository](https://build.phonegap.com/plugins)~:
   With the above two options, including private repositories, this repository can no longer be submitted to, 
   and should no longer be used. For reference anyways:
 
@@ -31,7 +31,7 @@ See the individual plugins' documentation for it's usage and Javascript API.
 
 <div class="row" style="margin-top:40px;">
 <div class="col-sm-12">
-<a href="3-the-pgb-development-cycle.html" class="btn btn-default pull-right">Next <i class="glyphicon
+<a href="4-the-pgb-development-cycle.html" class="btn btn-default pull-right">Next <i class="glyphicon
 glyphicon-chevron-right"></i></a>
 </div>
 </div>

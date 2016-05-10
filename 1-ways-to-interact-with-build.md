@@ -3,9 +3,6 @@ layout: module
 title: Ways to Interact with Build
 ---
 
-
-## Ways to Interact with Build
-
 ### Website
 
 The most basic method to create apps on Build is [through the website upload UI](https://build.phonegap.com/apps). Create a directory to hold your PhoneGap Build app. At a minimum your app should have
@@ -29,16 +26,16 @@ The most basic method to create apps on Build is [through the website upload UI]
 
         <!DOCTYPE html>
         <html>
-    	<head>
-    	  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
-    	</head>
-    	<body>
-    	  <p>Can we start drinking yet?</p>
-    	</body>
-    	</html>
+   	      <head>
+    	    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
+    	  </head>
+    	  <body>
+    	    <p>Can we start drinking yet?</p>
+    	  </body>
+        </html>
 
 
-Zip up the contents of your app directory, and upload it to PhoneGap Build.
+Zip up the contents of your app directory, and upload it to PhoneGap Build. Once your builds complete, scan with your QR code and install.
 
 ### PhoneGap CLI
 
@@ -82,7 +79,7 @@ The API will be discussed in more detail later in the workshop. [Full API Docume
 
 <div class="row" style="margin-top:40px;">
 <div class="col-sm-12">
-<a href="2-make-your-app-do-stuff.html" class="btn btn-default pull-right">Next <i class="glyphicon
+<a href="2-setting-up-your-ios-developer-key.html" class="btn btn-default pull-right">Next <i class="glyphicon
 glyphicon-chevron-right"></i></a>
 </div>
 </div>

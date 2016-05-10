@@ -3,8 +3,6 @@ layout: home
 title: PhoneGap Build Workshop - PhoneGap Day EU 2016
 ---
 
-## PhoneGap Build Workshop - PhoneGap Day EU
-
 ### What will this workshop cover?
 
 - Ways to interact with PhoneGap Build
