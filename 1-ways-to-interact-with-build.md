@@ -57,10 +57,9 @@ phonegap run android
 # android-sdk required to run from command line
 ```
 
---------
+### REST API
 
-
-Above we've shown you two ways to interact with PhoneGap Build -- the Website Interface, and the PhoneGap CLI. The latter utilizes PGB's REST API to interact with Build. You can use this API yourself to write your own build scripts, or even write third-party applications that integrate with PhoneGap Build.
+The PhoneGap CLI uses PGB's REST API to interact with Build. You can use this API yourself to write your own build scripts, or even write third-party applications that integrate with PhoneGap Build.
 
 **API Examples (using `curl` for simplicity):**
 
