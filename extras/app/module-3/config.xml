@@ -1,0 +1,15 @@
+<widget xmlns="http://www.w3.org/ns/widgets" 
+        xmlns:gap="http://phonegap.com/ns/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android" 
+        id="com.phonegap.build.demo" version="0.0.1">
+
+  <name>PhoneGapBuild</name>
+  <description>It's just a demo.</description>
+  <author>PhoneGap Team</author>
+
+  <preference name="phonegap-version" value="cli-6.1.0" />
+
+  <plugin name="phonegap-plugin-barcodescanner" />
+  <plugin name="cordova-plugin-inappbrowser" />
+
+</widget>

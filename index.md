@@ -7,8 +7,10 @@ title: PhoneGap Build Workshop - PhoneGap Day EU 2016
 
 - Ways to interact with PhoneGap Build
 - Creating an app, updating an app, adding plugins
-- Development tools
+- Tools and an Efficient Dev Cycle with Build
 - Signing your apps and submitting to stores
+- Using the API with an Oauth Client
+- tweaking manifests with the config-file element
 - Anything else you want, if we can fit it in -- just ask
 
 ### Suggested Prerequisites

@@ -24,25 +24,30 @@ Ways to pull a plugin into your app on PhoneGap Build:
 
 See the individual plugins' documentation for it's usage and Javascript API.
 
-Example: Simple Barcode Scanner
+-----
+
+#### Example: Simple Barcode Scanner
 
 Add two plugins to your config.xml file:
 
     <plugin name="phonegap-plugin-barcodescanner" />
     <plugin name="cordova-plugin-inappbrowser" />
 
-Create a button, and invoke the scanner in the onclick event:
+Create a button, and invoke the scanner in the onclick event. See [extras/app/module-3](extras/app/module-3).
 
-    $('#scan').on('click', function() {
-    	cordova.plugins.barcodeScanner.scan(function(result) {
-    		// invoke inappbrowser
-    		var ref = cordova.InAppBrowser.open(result.text, '_blank', {});
-    	}, 
-    	function(error) {
-    		alert('error! ' + error);
-    	},
-    	{} // options)
-    });
+	cordova.plugins.barcodeScanner.scan(function(result) {
+		// invoke inappbrowser
+		var ref = cordova.InAppBrowser.open(result.text, '_blank', {});
+	}, 
+	function(error) {
+		alert('error! ' + error);
+	},
+	{} // options)
+
+
+The [Star Track app](https://github.com/phonegap/phonegap-app-star-track) that we built earlier also has some good examples of plugins.
+
+    https://github.com/phonegap/phonegap-app-star-track.git
 
 
 <div class="row" style="margin-top:40px;">

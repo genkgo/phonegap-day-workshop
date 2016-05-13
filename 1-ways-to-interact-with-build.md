@@ -3,65 +3,88 @@ layout: module
 title: Ways to Interact with Build
 ---
 
-### Website
+Lets build PhoneGap's Star Track using PhoneGap Build:
 
-The most basic method to create apps on Build is [through the website upload UI](https://build.phonegap.com/apps). Create a directory to hold your PhoneGap Build app. At a minimum your app should have
+    phonegap create StarTrack --template https://github.com/phonegap/phonegap-app-star-track.git
+    cd StarTrack
+    phonegap remote login
+    phonegap remote build android
 
-1. A config.xml file:
+Navigate to PhoneGap Build and find your app:
+
+<img src="images/star-track-build.png" style="width:100%" />
+
+Let's create an app from scratch. Start by creating a directory to hold your PhoneGap Build app. A very basic PhoneGap app can consist of 2 files:
+
+1. A `config.xml` file:
         
         <widget xmlns="http://www.w3.org/ns/widgets" 
                 xmlns:gap="http://phonegap.com/ns/1.0"
                 xmlns:android="http://schemas.android.com/apk/res/android" 
                 id="com.phonegap.build.demo" version="0.0.1">
 
-	      <name>PoneGapBuild</name>
+	      <name>PhoneGapBuild</name>
 	      <description>It's just a demo.</description>
 	      <author>PhoneGap Team</author>
 
+          <!-- PGB -->
 	      <preference name="phonegap-version" value="cli-6.1.0" />
 
         </widget>
 
-2. An index.html file:
+2. An `index.html` file:
 
         <!DOCTYPE html>
         <html>
    	      <head>
     	    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
+            <script src="cordova.js"></script>
     	  </head>
     	  <body>
-    	    <p>Can we start drinking yet?</p>
+    	    <p><h1>Can we start drinking yet?<h1></p>
     	  </body>
         </html>
 
+Alternatively you can find this app in `extras/app/module-1`.
 
-Zip up the contents of your app directory, and upload it to PhoneGap Build. Once your builds complete, scan with your QR code and install.
+Zip up the contents of the app directory, and upload it to [PhoneGap Build](https://build.phonegap.com).
+
+<img src="images/website-create.png" style="width:100%" />
+
+Once your builds complete, scan with your QR code and install.
 
 ### PhoneGap CLI
 
-Alternatively, if you're a command-line friendly user, you can use the Phonegap CLI to create an app and push it to Build:
+As we did at the start, f you're a command-line user, you can use the Phonegap CLI to create an app and push it to Build.
 
+Install phonegap:
 
 ```
 npm install phonegap
 phonegap remote --help
 ```
 
+Create the application, login to PGB and run the remote build:
 
 ```
 phonegap create path/to/pg-cli-app "com.phonegap.cli.demo" "PhonegapCLIApp"
 cd path/to/pg-cli-app
 phonegap login
 phonegap remote build android
-phonegap run android
-# android-sdk required to run from command line
+
+# the android-sdk is required to run from command line, otherwise use a QR code
+phonegap remote run android
 ```
 
 ### REST API
 
-The PhoneGap CLI uses PGB's REST API to interact with Build. You can use this API yourself to write your own build scripts, or even write third-party applications that integrate with PhoneGap Build.
+The PhoneGap CLI uses PGB's REST API to interact with Build. You can use this API yourself to write your own build scripts, or write third-party applications that integrate with PhoneGap Build.
 
 **API Examples (using `curl` for simplicity):**
+
+- Get your API token ([also available on Build](https://build.phonegap.com/people/edit)):
+
+        curl -u rwilloug@adobe.com https://build.phonegap.com/api/v1/token
 
 - Get your profile:
 
@@ -73,7 +96,7 @@ The PhoneGap CLI uses PGB's REST API to interact with Build. You can use this AP
 
 
 
-The API will be discussed in more detail later in the workshop. [Full API Documentation can be found here.](http://docs.build.phonegap.com/en_US/developer_api_api.md.html#PhoneGap%20Build%20Developer%20API)
+The API will be discussed more later in the workshop. [Full API Documentation can be found here.](http://docs.build.phonegap.com/en_US/developer_api_api.md.html#PhoneGap%20Build%20Developer%20API)
 
 
 <div class="row" style="margin-top:40px;">

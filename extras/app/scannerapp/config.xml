@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.pgday.scannerapp" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>ScannerApp</name>
+    <description>It's just a demo.</description>
+    <author>PhoneGap Team</author>
+    <preference name="phonegap-version" value="cli-6.1.0" />
+    <plugin name="phonegap-plugin-barcodescanner" />
+    <plugin name="cordova-plugin-inappbrowser" />
+</widget>
