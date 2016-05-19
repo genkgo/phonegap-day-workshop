@@ -10,11 +10,15 @@ Lets build PhoneGap's Star Track using PhoneGap Build:
     phonegap remote login
     phonegap remote build android
 
+If you're not a CLI user, you can just enter the above git url on build.
+
 Navigate to PhoneGap Build and find your app:
 
 <img src="images/star-track-build.png" style="width:100%" />
 
-Let's create an app from scratch. Start by creating a directory to hold your PhoneGap Build app. A very basic PhoneGap app can consist of 2 files:
+-----
+
+Now let's create an app from scratch. Start by creating a directory to hold your PhoneGap Build app. A very basic PhoneGap app can consist of 2 files:
 
 1. A `config.xml` file:
         
@@ -53,9 +57,11 @@ Zip up the contents of the app directory, and upload it to [PhoneGap Build](http
 
 Once your builds complete, scan with your QR code and install.
 
+----
+
 ### PhoneGap CLI
 
-As we did at the start, f you're a command-line user, you can use the Phonegap CLI to create an app and push it to Build.
+If you're a command-line user, you can use the Phonegap CLI to create an app and push it to Build, as we did at the start with Star Track.
 
 Install phonegap:
 
@@ -76,13 +82,15 @@ phonegap remote build android
 phonegap remote run android
 ```
 
+----
+
 ### REST API
 
 The PhoneGap CLI uses PGB's REST API to interact with Build. You can use this API yourself to write your own build scripts, or write third-party applications that integrate with PhoneGap Build.
 
 **API Examples (using `curl` for simplicity):**
 
-- Get your API token ([also available on Build](https://build.phonegap.com/people/edit)):
+- Get your API token you can also generate and retrieve it from ([your account settings](https://build.phonegap.com/people/edit)):
 
         curl -u rwilloug@adobe.com https://build.phonegap.com/api/v1/token
 
