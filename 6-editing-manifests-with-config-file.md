@@ -26,11 +26,3 @@ But suppose you don't want to allow PortraitUpsideDown? So specify your own xml 
     </gap:config-file>
 
 To check and debug the resulting Property List file, simply rename your .ipa file to .zip, unzip it, and examine the Info.plist file.
-
-
-<div class="row" style="margin-top:40px;">
-<div class="col-sm-12">
-<a href="7-creating-client-applications-with-oauth.html" class="btn btn-default pull-right">Next <i class="glyphicon
-glyphicon-chevron-right"></i></a>
-</div>
-</div>
