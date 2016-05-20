@@ -33,16 +33,45 @@ Add two plugins to your config.xml file:
     <plugin name="phonegap-plugin-barcodescanner" />
     <plugin name="cordova-plugin-inappbrowser" />
 
-Create a button, and invoke the scanner in the onclick event. See [extras/app/module-3](extras/app/module-3).
+Add a clickable button to your index.html file:
 
-	cordova.plugins.barcodeScanner.scan(function(result) {
-		// invoke inappbrowser
-		var ref = cordova.InAppBrowser.open(result.text, '_blank', {});
-	}, 
-	function(error) {
-		alert('error! ' + error);
-	},
-	{} // options)
+    <!DOCTYPE html>
+	<html>
+	  <head>
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
+	  </head>
+	  <body>
+	    <p>Can we drink the beer yet</p>
+	    <a href="#" id="scan">SCAN</a>
+	  </body>
+	  <script src="cordova.js"></script>
+	  <script src="index.js"></script>
+	</html>
+
+And an index.js file:
+
+	var app = {
+
+		initialize: function() {
+			document.addEventListener('deviceready', this.deviceReady, false);
+			document.addEventListener('click', this.scan, false);
+		},
+
+		deviceReady: function() {
+			console.log('Device Ready!')
+		},
+
+		scan: function() {
+			cordova.plugins.barcodeScanner.scan(app.onscan);
+		},
+
+		onscan: function(result) {
+			cordova.InAppBrowser.open(result.text, '_blank');
+		}
+
+	};
+
+	app.initialize();
 
 
 The [Star Track app](https://github.com/phonegap/phonegap-app-star-track) that we built earlier also has some good examples of plugins.

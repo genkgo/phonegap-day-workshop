@@ -111,7 +111,7 @@ The PhoneGap CLI uses PGB's REST API to interact with Build. You can use this AP
         # bash
         rm ../testapp.zip
         zip -r ../testapp.zip ./*
-        curl -X PUT -F file=@/Users/ryanw/dev/sandbox/testapp.zip https://build.phonegap.com/api/v1/apps/2084281?auth_token=$PGB_AUTH_TOKEN
+        curl -X PUT -F file=@/Users/ryanw/dev/sandbox/testapp.zip https://build.phonegap.com/api/v1/apps/2084321?auth_token=$PGB_AUTH_TOKEN
 
 
 
