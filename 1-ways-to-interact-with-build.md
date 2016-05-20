@@ -101,6 +101,10 @@ The PhoneGap CLI uses PGB's REST API to interact with Build. You can use this AP
 
 		curl -F file=@/Users/ryanw/dev/testapp.zip -F 'data={ "title":"whatever", "create_method":"file"}' https://build.phonegap.com/api/v1/apps?auth_token=1234567890
 
+- Update an app
+
+        curl -X PUT -F file=@/Users/ryanw/dev/testapp.zip https://build.phonegap.com/api/v1/apps/2084281?auth_token=$PGB_AUTH_TOKEN
+
 
 
 The API will be discussed more later in the workshop. [Full API Documentation can be found here.](http://docs.build.phonegap.com/en_US/developer_api_api.md.html#PhoneGap%20Build%20Developer%20API)
