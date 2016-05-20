@@ -2,23 +2,7 @@
 layout: module
 title: Ways to Interact with Build
 ---
-
-Lets build PhoneGap's Star Track using PhoneGap Build:
-
-    phonegap create StarTrack --template https://github.com/phonegap/phonegap-app-star-track.git
-    cd StarTrack
-    phonegap remote login
-    phonegap remote build android
-
-If you're not a CLI user, you can just enter the above git url on build.
-
-Navigate to PhoneGap Build and find your app:
-
-<img src="images/star-track-build.png" style="width:100%" />
-
------
-
-Now let's create an app from scratch. Start by creating a directory to hold your PhoneGap Build app. A very basic PhoneGap app can consist of 2 files:
+To start we'll create an extremely basic Hello World app from scratch. Start by creating a directory to hold your PhoneGap Build app. A very basic PhoneGap app can consist of 2 files:
 
 1. A `config.xml` file:
         
@@ -45,7 +29,7 @@ Now let's create an app from scratch. Start by creating a directory to hold your
             <script src="cordova.js"></script>
     	  </head>
     	  <body>
-    	    <p><h1>Can we start drinking yet?<h1></p>
+    	    <p><h1>Can I have beer yet<h1></p>
     	  </body>
         </html>
 
@@ -56,6 +40,21 @@ Zip up the contents of the app directory, and upload it to [PhoneGap Build](http
 <img src="images/website-create.png" style="width:100%" />
 
 Once your builds complete, scan with your QR code and install.
+
+----
+
+Lets build PhoneGap's Star Track using PhoneGap Build:
+
+    phonegap create StarTrack --template https://github.com/phonegap/phonegap-app-star-track.git
+    cd StarTrack
+    phonegap remote login
+    phonegap remote build android
+
+If you're not a CLI user, you can just enter the above git url on build.
+
+Navigate to PhoneGap Build and find your app:
+
+<img src="images/star-track-build.png" style="width:100%" />
 
 ----
 

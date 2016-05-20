@@ -3,6 +3,8 @@ layout: home
 title: PhoneGap Build Workshop - PhoneGap Day EU 2016
 ---
 
+**If you haven't done so yet, [sign up for an Adobe ID](https://build.phonegap.com/people/sign_in) so you can use PhoneGap Build.**
+
 ### What will this workshop cover?
 
 - Ways to interact with PhoneGap Build
@@ -15,8 +17,8 @@ title: PhoneGap Build Workshop - PhoneGap Day EU 2016
 
 ### Suggested Prerequisites
 
-- A basic understanding of HTML, JS, and PhoneGap
 - [An Adobe ID](https://build.phonegap.com/people/sign_in) (PhoneGap Build account)
+- A basic understanding of HTML, JS, and PhoneGap
 - (optional) The PhoneGap CLI tool -- we'll demo remote builds with the CLI:
         
         npm install phonegap

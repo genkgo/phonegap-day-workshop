@@ -30,7 +30,7 @@ Note: You'll need an Apple Developer Account to follow this part.
 
 <div class="row" style="margin-top:40px;">
 <div class="col-sm-12">
-<a href="3-make-your-app-do-stuff.html" class="btn btn-default pull-right">Next <i class="glyphicon
+<a href="3-plugins-and-more.html" class="btn btn-default pull-right">Next <i class="glyphicon
 glyphicon-chevron-right"></i></a>
 </div>
 </div>
